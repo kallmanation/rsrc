@@ -3,7 +3,9 @@
   "builds": [
     { "src": "readme.md", "use": "@now/md" },
     { "src": "license.md", "use": "@now/md" },
-    { "src": "*.html", "use": "@now/static" }
+    { "src": "*.html", "use": "@now/static" },
+    { "src": "*.js", "use": "@now/static" },
+    { "src": "examples/*", "use": "@now/static" }
   ],
   "routes": [
     {
