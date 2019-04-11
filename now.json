@@ -4,5 +4,11 @@
     { "src": "readme.md", "use": "@now/md" },
     { "src": "license.md", "use": "@now/md" },
     { "src": "*.html", "use": "@now/static" }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/readme.html"
+    }
   ]
 }
