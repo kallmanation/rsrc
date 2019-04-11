@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>RSRC - Hello Slots!</title>
+    <script src="/rsrc.js"></script>
+  </head>
+  <body>
+    <h3>You can slot content into a component:</h3>
+    <hello-x>Slots</hello-x>
+
+    <h3>Or just accept the default:</h3>
+    <hello-x></hello-x>
+
+    <template name="hello-x" rsrc>
+      <h1>
+        Hello,
+        <slot>World</slot>!
+      </h1>
+    </template>
+  </body>
+</html>

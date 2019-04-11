@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>RSRC - Named Slots</title>
+    <script src="/rsrc.js"></script>
+
+    <template name="common-page" rsrc>
+      <style>
+        .common-page-wrapper {
+          min-height: 100vh;
+        }
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        }
+        header, footer {
+          background: black;
+          color: white;
+        }
+        main {
+          background: white;
+          flex-grow: 1;
+        }
+        .section-container {
+          max-width: 1080px;
+          width: 100%;
+        }
+        .text-center { text-align: center; }
+      </style>
+
+      <div class="wrapper common-page-wrapper">
+        <header class="wrapper">
+          <div class="section-container">
+            <slot name="header">
+              <h1 class="text-center">Common Header</h1>
+            </slot>
+          </div>
+        </header>
+        <main class="wrapper">
+          <div class="section-container">
+            <slot name="main"></slot>
+          </div>
+        </main>
+        <footer class="wrapper">
+          <div class="section-container">
+            <slot name="footer">
+              <h1 class="text-center">Common Footer</h1>
+            </slot>
+          </div>
+        </footer>
+      </div>
+    </template>
+  </head>
+  <body style="margin: 0;">
+    <common-page>
+      <hello-x slot="main">Common Pages</hello-x>
+
+      <h2 slot="footer">Common when you want it, controllable when you don't!</h2>
+    </common-page>
+
+    <template name="hello-x" rsrc>
+      <h1>
+        Hello,
+        <slot>World</slot>!
+      </h1>
+    </template>
+  </body>
+</html>

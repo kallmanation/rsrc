@@ -1,11 +1,8 @@
 {
   "name": "rsrc",
   "builds": [
-    { "src": "readme.md", "use": "@now/md" },
-    { "src": "license.md", "use": "@now/md" },
-    { "src": "examples/index.md", "use": "@now/md" },
+    { "src": "/**/*.md", "use": "@now/md" },
     { "src": "examples/*", "use": "@now/static" },
-    { "src": "*.html", "use": "@now/static" },
     { "src": "*.js", "use": "@now/static" }
   ],
   "routes": [
