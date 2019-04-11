@@ -12,4 +12,12 @@ I would call this a polyfill, but since no browsers support anything like this, 
 
  - [live examples](https://rsrc.klmntn.com/examples)
  - [live source](https://rsrc.klmntn.com/_src)
+ - [live rsrc.js](https://rsrc.klmntn.com/rsrc.js)
 
+## Installation
+
+ 1. Download [rsrc.js](https://rsrc.klmntn.com/rsrc.js) and include it in your site files.
+ 2. Include directly from the cdn in your page's `<head>`:
+```html
+<script src="https://rsrc.klmntn.com/rsrc.js"></script>
+```
