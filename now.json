@@ -12,5 +12,8 @@
       "src": "/",
       "dest": "/readme.html"
     }
-  ]
+  ],
+  "alias": "rsrc",
+  "version": 2,
+  "public": true
 }
