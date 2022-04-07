@@ -2,7 +2,7 @@
 ### a.k.a. Web Components without JavaScript*
 ---
 
-*The current Web Compenent specifications currently require JavaScript to create custom elements, utilize `<template>` elements, and to manage Shadow DOM.
+*The current Web Component specifications currently require JavaScript to create custom elements, utilize `<template>` elements, and to manage Shadow DOM.
 
 This feels incomplete. It is called ***ht***tp, not ***js***tp, after all.
 
